@@ -25,6 +25,7 @@ function reset_test {
   rm -f "$DIR/$PAGE" "$DIR/$SUB"
   wget -q "$1"
 
+  #Quanto mais apurado esse filtro abaixo estiver mais dominios e subdominios você poderá encontrar.
   grep --text href= "$PAGE" | cut -d "/" -f3 | cut -d '"' -f1 | cut -d "'" -f1 | grep '\.' \
   | egrep -v '"|#|\||%|<|>|=|_|\?|.css' | sort -u > "$SUB"
 
