@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Esse script em Bash varre páginas HTML para identificar domínios e subdomínios que estão linkados.
+# Esse script em Bash varre páginas HTML para identificar domínios e subdomínios que estão linkados na pagina.
 
 # Variáveis
 DIR=$(pwd)
